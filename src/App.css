@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 1280px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* HEADER */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header p {
+  font-size: 30px;
+}
+
+/* NAV MENU */
+
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+}
+
+nav a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav div a {
+  margin-right: 60px;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  margin: 20px 0;
+  background-color: #fff;
+  width: 910px;
+  height: 450px;
+  padding: 30px 25px;
+}
+
+article p {
+  font-size: 18px;
+}
+
+.subtitle {
+  margin: 20px 0;
+}
+
+article img {
+  width: 907px;
+  height: 220px;
+  object-fit: cover;
+  object-position: right;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: justify;
+}
+
+/* SIDE CONTENT */
+
+.about {
+  box-sizing: border-box;
+  width: 300px;
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 23px 25px;
+}
+
+.about img {
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
+  margin: 20px 0;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+.footer span {
+  font-weight: bold;
 }
